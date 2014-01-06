@@ -19,6 +19,12 @@
 		1A579C61187B449B00E5F5BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A579C49187B449B00E5F5BE /* UIKit.framework */; };
 		1A579C69187B449B00E5F5BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A579C67187B449B00E5F5BE /* InfoPlist.strings */; };
 		1A579C6B187B449B00E5F5BE /* LayoutExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A579C6A187B449B00E5F5BE /* LayoutExamplesTests.m */; };
+		1A579C75187B45C700E5F5BE /* LayoutList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A579C74187B45C700E5F5BE /* LayoutList.storyboard */; };
+		1A579C77187B472900E5F5BE /* DynamicTextHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A579C76187B472900E5F5BE /* DynamicTextHeight.storyboard */; };
+		1A579C7B187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A579C7A187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m */; };
+		1A579C7E187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A579C7D187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m */; };
+		1A579C81187B4B1100E5F5BE /* firefly.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A579C80187B4B1100E5F5BE /* firefly.json */; };
+		1A579C84187B4DEE00E5F5BE /* LayoutListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A579C83187B4DEE00E5F5BE /* LayoutListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,15 @@
 		1A579C66187B449B00E5F5BE /* LayoutExamplesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutExamplesTests-Info.plist"; sourceTree = "<group>"; };
 		1A579C68187B449B00E5F5BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A579C6A187B449B00E5F5BE /* LayoutExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutExamplesTests.m; sourceTree = "<group>"; };
+		1A579C74187B45C700E5F5BE /* LayoutList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LayoutList.storyboard; path = Source/LayoutList.storyboard; sourceTree = "<group>"; };
+		1A579C76187B472900E5F5BE /* DynamicTextHeight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DynamicTextHeight.storyboard; path = Source/DynamicTextHeight.storyboard; sourceTree = "<group>"; };
+		1A579C79187B4AE700E5F5BE /* DynamicTextHeightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicTextHeightTableViewController.h; path = Source/DynamicTextHeightTableViewController.h; sourceTree = "<group>"; };
+		1A579C7A187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicTextHeightTableViewController.m; path = Source/DynamicTextHeightTableViewController.m; sourceTree = "<group>"; };
+		1A579C7C187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicTextHeightDetailViewController.h; path = Source/DynamicTextHeightDetailViewController.h; sourceTree = "<group>"; };
+		1A579C7D187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicTextHeightDetailViewController.m; path = Source/DynamicTextHeightDetailViewController.m; sourceTree = "<group>"; };
+		1A579C80187B4B1100E5F5BE /* firefly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firefly.json; sourceTree = "<group>"; };
+		1A579C82187B4DEE00E5F5BE /* LayoutListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayoutListTableViewController.h; path = Source/LayoutListTableViewController.h; sourceTree = "<group>"; };
+		1A579C83187B4DEE00E5F5BE /* LayoutListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayoutListTableViewController.m; path = Source/LayoutListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +124,11 @@
 			children = (
 				1A579C54187B449B00E5F5BE /* AppDelegate.h */,
 				1A579C55187B449B00E5F5BE /* AppDelegate.m */,
+				1A579C74187B45C700E5F5BE /* LayoutList.storyboard */,
+				1A579C82187B4DEE00E5F5BE /* LayoutListTableViewController.h */,
+				1A579C83187B4DEE00E5F5BE /* LayoutListTableViewController.m */,
+				1A579C7F187B4B1100E5F5BE /* Assets */,
+				1A579C78187B4ABC00E5F5BE /* DynamicTextHeight */,
 				1A579C57187B449B00E5F5BE /* Images.xcassets */,
 				1A579C4C187B449B00E5F5BE /* Supporting Files */,
 			);
@@ -142,6 +162,26 @@
 				1A579C67187B449B00E5F5BE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A579C78187B4ABC00E5F5BE /* DynamicTextHeight */ = {
+			isa = PBXGroup;
+			children = (
+				1A579C76187B472900E5F5BE /* DynamicTextHeight.storyboard */,
+				1A579C79187B4AE700E5F5BE /* DynamicTextHeightTableViewController.h */,
+				1A579C7A187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m */,
+				1A579C7C187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.h */,
+				1A579C7D187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m */,
+			);
+			name = DynamicTextHeight;
+			sourceTree = "<group>";
+		};
+		1A579C7F187B4B1100E5F5BE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1A579C80187B4B1100E5F5BE /* firefly.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +261,9 @@
 			files = (
 				1A579C50187B449B00E5F5BE /* InfoPlist.strings in Resources */,
 				1A579C58187B449B00E5F5BE /* Images.xcassets in Resources */,
+				1A579C77187B472900E5F5BE /* DynamicTextHeight.storyboard in Resources */,
+				1A579C81187B4B1100E5F5BE /* firefly.json in Resources */,
+				1A579C75187B45C700E5F5BE /* LayoutList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A579C56187B449B00E5F5BE /* AppDelegate.m in Sources */,
+				1A579C7B187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m in Sources */,
 				1A579C52187B449B00E5F5BE /* main.m in Sources */,
+				1A579C84187B4DEE00E5F5BE /* LayoutListTableViewController.m in Sources */,
+				1A579C7E187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
