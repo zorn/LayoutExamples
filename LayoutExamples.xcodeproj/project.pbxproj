@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A26E054187C5216000CF46C /* DynamicTextHeightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A26E053187C5216000CF46C /* DynamicTextHeightLabel.m */; };
 		1A579C46187B449B00E5F5BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A579C45187B449B00E5F5BE /* Foundation.framework */; };
 		1A579C48187B449B00E5F5BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A579C47187B449B00E5F5BE /* CoreGraphics.framework */; };
 		1A579C4A187B449B00E5F5BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A579C49187B449B00E5F5BE /* UIKit.framework */; };
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A26E052187C5216000CF46C /* DynamicTextHeightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicTextHeightLabel.h; path = Source/DynamicTextHeightLabel.h; sourceTree = "<group>"; };
+		1A26E053187C5216000CF46C /* DynamicTextHeightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicTextHeightLabel.m; path = Source/DynamicTextHeightLabel.m; sourceTree = "<group>"; };
+		1A376203187C5911008742BF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1A579C42187B449B00E5F5BE /* LayoutExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A579C45187B449B00E5F5BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A579C47187B449B00E5F5BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +107,7 @@
 		1A579C39187B449B00E5F5BE = {
 			isa = PBXGroup;
 			children = (
+				1A376203187C5911008742BF /* README.md */,
 				1A579C4B187B449B00E5F5BE /* LayoutExamples */,
 				1A579C64187B449B00E5F5BE /* LayoutExamplesTests */,
 				1A579C44187B449B00E5F5BE /* Frameworks */,
@@ -185,6 +190,8 @@
 				1A579C7A187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m */,
 				1A579C7C187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.h */,
 				1A579C7D187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m */,
+				1A26E052187C5216000CF46C /* DynamicTextHeightLabel.h */,
+				1A26E053187C5216000CF46C /* DynamicTextHeightLabel.m */,
 			);
 			name = DynamicTextHeight;
 			sourceTree = "<group>";
@@ -318,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFEDE62187B8DD50002A697 /* DynamicHeightCell.m in Sources */,
+				1A26E054187C5216000CF46C /* DynamicTextHeightLabel.m in Sources */,
 				1A579C56187B449B00E5F5BE /* AppDelegate.m in Sources */,
 				1A579C7B187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m in Sources */,
 				1AFEDE5F187B8D4F0002A697 /* DynamicCellHeightTableViewController.m in Sources */,
