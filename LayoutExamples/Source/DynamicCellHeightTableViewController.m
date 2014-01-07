@@ -52,24 +52,37 @@ static NSString *dynamicHeightCellID = @"DynamicHeightCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static DynamicHeightCell *offscreenCell;
+    DynamicHeightCell *cell = [tableView dequeueReusableCellWithIdentifier:dynamicHeightCellID];
     
-    if (!offscreenCell) {
-        offscreenCell = [tableView dequeueReusableCellWithIdentifier:dynamicHeightCellID];
-    }
-    [self configureCell:offscreenCell atIndexPath:indexPath];
+    // Configure the cell for this indexPath
+    [self configureCell:cell atIndexPath:indexPath];
     
-    [offscreenCell.contentView setNeedsLayout];
-    [offscreenCell.contentView layoutIfNeeded];
+    // Set the width of the cell to match the width of the table view. This is important so that we'll get the
+    // correct height for different table view widths, since our cell's height depends on its width due to
+    // the multi-line UILabel word wrapping. Don't need to do this above in -[tableView:cellForRowAtIndexPath]
+    // because it happens automatically when the cell is used in the table view.
+    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
     
-    CGSize maximumSize = CGSizeMake(320.0, UILayoutFittingCompressedSize.height);
-    CGFloat height = [offscreenCell.contentView systemLayoutSizeFittingSize:maximumSize].height;
+    // Do the layout pass on the cell, which will calculate the frames for all the views based on the constraints
+    // (Note that the preferredMaxLayoutWidth is set on multi-line UILabels inside the -[layoutSubviews] method
+    // in the UITableViewCell subclass
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
+    
+    // Get the actual height required for the cell
+    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
+    // Add an extra point to the height to account for internal rounding errors that are occasionally observed in
+    // the Auto Layout engine, which cause the returned height to be slightly too small in some cases.
+    height += 1;
+    
     return height;
 }
 
+
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 150.0f;
 }
 
 @end

@@ -15,3 +15,7 @@ Helpful Articles:
 
 * [Advanced Auto Layout Toolbox](http://www.objc.io/issue-3/advanced-auto-layout-toolbox.html), by Florian Kugler
 
+Helpful Code:
+
+* [TableViewCellWithAutoLayout](https://github.com/smileyborg/TableViewCellWithAutoLayout)
+
