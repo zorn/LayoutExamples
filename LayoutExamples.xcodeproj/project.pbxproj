@@ -25,6 +25,10 @@
 		1A579C7E187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A579C7D187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m */; };
 		1A579C81187B4B1100E5F5BE /* firefly.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A579C80187B4B1100E5F5BE /* firefly.json */; };
 		1A579C84187B4DEE00E5F5BE /* LayoutListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A579C83187B4DEE00E5F5BE /* LayoutListTableViewController.m */; };
+		1AFEDE5C187B8C210002A697 /* DynamicCellHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFEDE5B187B8C210002A697 /* DynamicCellHeight.storyboard */; };
+		1AFEDE5F187B8D4F0002A697 /* DynamicCellHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFEDE5E187B8D4F0002A697 /* DynamicCellHeightTableViewController.m */; };
+		1AFEDE62187B8DD50002A697 /* DynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFEDE61187B8DD50002A697 /* DynamicHeightCell.m */; };
+		1AFEDE65187B8E440002A697 /* FireflyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFEDE64187B8E440002A697 /* FireflyService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,13 @@
 		1A579C80187B4B1100E5F5BE /* firefly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firefly.json; sourceTree = "<group>"; };
 		1A579C82187B4DEE00E5F5BE /* LayoutListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayoutListTableViewController.h; path = Source/LayoutListTableViewController.h; sourceTree = "<group>"; };
 		1A579C83187B4DEE00E5F5BE /* LayoutListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayoutListTableViewController.m; path = Source/LayoutListTableViewController.m; sourceTree = "<group>"; };
+		1AFEDE5B187B8C210002A697 /* DynamicCellHeight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DynamicCellHeight.storyboard; path = Source/DynamicCellHeight.storyboard; sourceTree = "<group>"; };
+		1AFEDE5D187B8D4F0002A697 /* DynamicCellHeightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicCellHeightTableViewController.h; path = Source/DynamicCellHeightTableViewController.h; sourceTree = "<group>"; };
+		1AFEDE5E187B8D4F0002A697 /* DynamicCellHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicCellHeightTableViewController.m; path = Source/DynamicCellHeightTableViewController.m; sourceTree = "<group>"; };
+		1AFEDE60187B8DD50002A697 /* DynamicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicHeightCell.h; path = Source/DynamicHeightCell.h; sourceTree = "<group>"; };
+		1AFEDE61187B8DD50002A697 /* DynamicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicHeightCell.m; path = Source/DynamicHeightCell.m; sourceTree = "<group>"; };
+		1AFEDE63187B8E440002A697 /* FireflyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FireflyService.h; path = LayoutExamples/Source/FireflyService.h; sourceTree = SOURCE_ROOT; };
+		1AFEDE64187B8E440002A697 /* FireflyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FireflyService.m; path = LayoutExamples/Source/FireflyService.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +138,9 @@
 				1A579C74187B45C700E5F5BE /* LayoutList.storyboard */,
 				1A579C82187B4DEE00E5F5BE /* LayoutListTableViewController.h */,
 				1A579C83187B4DEE00E5F5BE /* LayoutListTableViewController.m */,
+				1AFEDE66187B8E4A0002A697 /* Services */,
 				1A579C7F187B4B1100E5F5BE /* Assets */,
+				1AFEDE5A187B8BFA0002A697 /* DynamicCellHeight */,
 				1A579C78187B4ABC00E5F5BE /* DynamicTextHeight */,
 				1A579C57187B449B00E5F5BE /* Images.xcassets */,
 				1A579C4C187B449B00E5F5BE /* Supporting Files */,
@@ -182,6 +195,27 @@
 				1A579C80187B4B1100E5F5BE /* firefly.json */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		1AFEDE5A187B8BFA0002A697 /* DynamicCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				1AFEDE5B187B8C210002A697 /* DynamicCellHeight.storyboard */,
+				1AFEDE5D187B8D4F0002A697 /* DynamicCellHeightTableViewController.h */,
+				1AFEDE5E187B8D4F0002A697 /* DynamicCellHeightTableViewController.m */,
+				1AFEDE60187B8DD50002A697 /* DynamicHeightCell.h */,
+				1AFEDE61187B8DD50002A697 /* DynamicHeightCell.m */,
+			);
+			name = DynamicCellHeight;
+			sourceTree = "<group>";
+		};
+		1AFEDE66187B8E4A0002A697 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1AFEDE63187B8E440002A697 /* FireflyService.h */,
+				1AFEDE64187B8E440002A697 /* FireflyService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A579C50187B449B00E5F5BE /* InfoPlist.strings in Resources */,
+				1AFEDE5C187B8C210002A697 /* DynamicCellHeight.storyboard in Resources */,
 				1A579C58187B449B00E5F5BE /* Images.xcassets in Resources */,
 				1A579C77187B472900E5F5BE /* DynamicTextHeight.storyboard in Resources */,
 				1A579C81187B4B1100E5F5BE /* firefly.json in Resources */,
@@ -282,9 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFEDE62187B8DD50002A697 /* DynamicHeightCell.m in Sources */,
 				1A579C56187B449B00E5F5BE /* AppDelegate.m in Sources */,
 				1A579C7B187B4AE700E5F5BE /* DynamicTextHeightTableViewController.m in Sources */,
+				1AFEDE5F187B8D4F0002A697 /* DynamicCellHeightTableViewController.m in Sources */,
 				1A579C52187B449B00E5F5BE /* main.m in Sources */,
+				1AFEDE65187B8E440002A697 /* FireflyService.m in Sources */,
 				1A579C84187B4DEE00E5F5BE /* LayoutListTableViewController.m in Sources */,
 				1A579C7E187B4B0300E5F5BE /* DynamicTextHeightDetailViewController.m in Sources */,
 			);
@@ -489,6 +527,7 @@
 				1A579C70187B449B00E5F5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A579C71187B449B00E5F5BE /* Build configuration list for PBXNativeTarget "LayoutExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +536,7 @@
 				1A579C73187B449B00E5F5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

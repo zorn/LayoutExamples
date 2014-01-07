@@ -1,5 +1,6 @@
 #import "DynamicTextHeightTableViewController.h"
 #import "DynamicTextHeightDetailViewController.h"
+#import "FireflyService.h"
 
 @interface DynamicTextHeightTableViewController ()
 @property (strong, nonatomic) NSArray *fireflyCharacters;
@@ -15,13 +16,8 @@
 
 - (void)importFireflyCharacters
 {
-    NSURL *fireflyCharactersURL = [[NSBundle mainBundle] URLForResource:@"firefly" withExtension:@"json"];
-    NSData *fireflyCharactersData = [NSData dataWithContentsOfURL:fireflyCharactersURL];
-    NSError *error = nil;
-    self.fireflyCharacters = [NSJSONSerialization JSONObjectWithData:fireflyCharactersData options:0 error:&error];
-    if (!self.fireflyCharacters) {
-        NSLog(@"Could not import fireflyCharacters, had error: %@", error);
-    }
+    FireflyService *fireflyService = [[FireflyService alloc] init];
+    self.fireflyCharacters = [fireflyService fireflyCharacters];
 }
 
 #pragma mark - Actions
@@ -30,7 +26,6 @@
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
