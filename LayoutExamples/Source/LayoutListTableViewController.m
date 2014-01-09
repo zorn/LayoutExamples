@@ -2,7 +2,8 @@
 
 typedef enum LayoutListExamples : NSUInteger {
     LayoutListExampleDynamicTextHeight = 0,
-    LayoutListExampleDynamicCellHeight
+    LayoutListExampleDynamicCellHeight,
+    LayoutListExampleMenuExpand
 } LayoutListExamples;
 
 @interface LayoutListTableViewController ()
@@ -25,6 +26,13 @@ typedef enum LayoutListExamples : NSUInteger {
     [self presentViewController:navVC animated:YES completion:nil];
 }
 
+- (void)launchMenuExpand
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MenuExpand" bundle:nil];
+    UINavigationController *navVC = [storyboard instantiateInitialViewController];
+    [self presentViewController:navVC animated:YES completion:nil];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.row) {
@@ -33,6 +41,9 @@ typedef enum LayoutListExamples : NSUInteger {
             break;
         case LayoutListExampleDynamicCellHeight:
             [self launchDynamicCellHeight];
+            break;
+        case LayoutListExampleMenuExpand:
+            [self launchMenuExpand];
             break;
     }
 }
